@@ -1,0 +1,28 @@
+
+@font-face {font-family: 'PR';src: url(../media/fonts/Pacifico-Regular.ttf);}
+@font-face {font-family: 'PDB';src: url(../media/fonts/PlayfairDisplay-Bold.ttf);}
+
+/* Цвет выделения текста */
+::selection {
+    background-color: #7479B380;
+    color: #fff;}
+::-moz-selection {
+    background-color: #7479B380;
+    color: #fff;}
+:focus {
+    outline-color: transparent;
+    outline-width: 0;}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;}
+body {
+    background: url("/media/img/bg.png") no-repeat;
+    background-position: top;
+    min-height: 75px;
+    padding-top: 75px;
+    padding-bottom: 75px;}
+
+#item-1, #item-2, #item-3, #item-4, #item-5 {
+    height: calc(100vh - 150px);
+}

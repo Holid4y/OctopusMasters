@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Сборка ПК, Сборка на заказ, Сборка ПК с периферией, обслуживание ПК, обновление драйверов">
+    <title>OctopusMasters</title>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <symbol id="bootstrap" viewBox="0 0 118 94">
+      <title>Bootstrap</title>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
+    </symbol>
+    <symbol id="mouse" viewBox="0 0 16 16">
+      <path d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3m4 8a4 4 0 0 1-8 0V5a4 4 0 1 1 8 0zM8 0a5 5 0 0 0-5 5v6a5 5 0 0 0 10 0V5a5 5 0 0 0-5-5"/>
+    </symbol>
+    <symbol id="tiktok" viewBox="0 0 16 16">
+      <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+    </symbol>
+    <symbol id="telegram" viewBox="0 0 16 16">
+      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
+    </symbol>
+    <symbol id="vk" viewBox="0 0 48 48">
+      <path d="M0 23.04C0 12.1788 0 6.74826 3.37413 3.37413C6.74826 0 12.1788 0 23.04 0H24.96C35.8212 0 41.2517 0 44.6259 3.37413C48 6.74826 48 12.1788 48 23.04V24.96C48 35.8212 48 41.2517 44.6259 44.6259C41.2517 48 35.8212 48 24.96 48H23.04C12.1788 48 6.74826 48 3.37413 44.6259C0 41.2517 0 35.8212 0 24.96V23.04Z" fill-rule="evenodd" clip-rule="evenodd"/>
+      <path d="M25.54 34.5801C14.6 34.5801 8.3601 27.0801 8.1001 14.6001H13.5801C13.7601 23.7601 17.8 27.6401 21 28.4401V14.6001H26.1602V22.5001C29.3202 22.1601 32.6398 18.5601 33.7598 14.6001H38.9199C38.0599 19.4801 34.4599 23.0801 31.8999 24.5601C34.4599 25.7601 38.5601 28.9001 40.1201 34.5801H34.4399C33.2199 30.7801 30.1802 27.8401 26.1602 27.4401V34.5801H25.54Z" fill="#1c1b22"/>
+    </symbol>
+    
+  </svg>
+
+  <nav class="navbar navbar-expand-md fixed-top py-3 mx-4">
+    <h3 class="col-md-4 mb-0 text-body-secondary">OctopusMasters</h3>
+    <div class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto"></div>
+    <ul class="nav nav-pills col-md-4 justify-content-end">
+      <li class="nav-item"><a href="#item-1" class="nav-link active scroll-to-section" aria-current="page">Главная</a></li>
+        <li class="nav-item"><a href="#item-2" class="nav-link scroll-to-section">Услуги</a></li>
+        <li class="nav-item"><a href="#item-3" class="nav-link scroll-to-section">Цены</a></li>
+        <li class="nav-item"><a href="#item-4" class="nav-link scroll-to-section">FAQs</a></li>
+        <li class="nav-item"><a href="#item-5" class="nav-link scroll-to-section">Контакты</a></li>
+    </ul>
+  </nav>
+
+  <div data-bs-spy="scroll" data-bs-smooth-scroll="true" class="container" tabindex="0">
+    <div id="item-1" class="position-relative">
+      <div class="py-5 position-relative top-50 start-50 translate-middle">
+        <span style="color: #676fcc; font-family: 'PDB'; font-size: 40px; font-weight: bold;">ВАС ПРИВЕТСТВУЕТ</span>
+        <p style="color: #e6e6e6; font-family: 'PR'; font-size: 85px; font-weight: bold">OctopusMasters</p>
+        <p class="lead">Мы занимаемся: <br><b>- сборками ПК под заказ</b> 
+                                        <br><b>- обслуживанием и чисткой ПК</b> 
+                                        <br><b>- настройкой программного обеспечения</b></p>
+      </div>
+    </div>
+    <div id="item-2" class="position-relative">
+      <div class="py-5 position-relative top-50 start-50 translate-middle">
+        <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+          <div class="col d-flex flex-column align-items-start gap-2">
+            <h2 class="fw-bold text-body-emphasis">Настройка и обслуживание компьютеров</h2>
+            <p class="text-body-secondary">Мы предлагаем широкий спектр услуг по настройке и обслуживанию компьютеров, чтобы ваша техника всегда работала на максимальной производительности.</p>
+            <p><a href="tel:89304088365" class="btn btn-primary btn-lg me-3">Позвонить</a><small>позвоните, чтобы заказать услугу</small></p>
+          </div>
+    
+          <div class="col">
+            <div class="row row-cols-1 row-cols-sm-2 g-4">
+              <div class="col d-flex flex-column gap-2">
+                <h4 class="fw-semibold mb-0 text-body-emphasis">Полное обслуживание</h4>
+                <p class="">
+                  <span>◦ Проверка аппаратной составляющей</span><br>
+                  <span>◦ Диагностика программного обеспечения</span><br>
+                  <span>◦ Оптимизация производительности</span>
+                </p>
+              </div>
+    
+              <div class="col d-flex flex-column gap-2">
+                <h4 class="fw-semibold mb-0 text-body-emphasis">Замена компонентов</h4>
+                <p class="">
+                  <span>◦ Замена комплектующих по запросу клиента</span><br>
+                  <span>◦ Обновление аппаратной части</span>
+                </p>
+              </div>
+    
+              <div class="col d-flex flex-column gap-2">
+                <h4 class="fw-semibold mb-0 text-body-emphasis">Чистка и техническое обслуживание</h4>
+                <p class="">
+                  <span>◦ Чистка накопителей</span><br>
+                  <span>◦ Замена термопасты</span><br>
+                  <span>◦ Кабель-менеджмент</span>
+                </p>
+              </div>
+    
+              <div class="col d-flex flex-column gap-2">
+                <h4 class="fw-semibold mb-0 text-body-emphasis">Программное обслуживание</h4>
+                <p class="">
+                  <span>◦ Единоразовая чистка от вирусов</span><br>
+                  <span>◦ Установка антивируса</span><br>
+                  <span>◦ Восстановление удаленных файлов</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="item-3" class="position-relative">
+      <div class="py-5 position-relative top-50 start-50 translate-middle">
+        <div class="p-4 pb-md-4 mx-auto text-center">
+          <h1 class="display-5 fw-normal text-body-emphasis">Цены на наши услуги</h1>
+        </div>
+        <div class="row row-cols-1 row-cols-md-4 mb-3 text-center">
+
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3"><h4 class="my-0 fw-normal">Бесплатно</h4></div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">0 руб</h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Консультация</li>
+                  <li>Подбор необходимых комплектующих</li>
+                </ul>
+          </div></div></div>
+
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3"><h4 class="my-0 fw-normal">Сборка ПК</h4></div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">1000<small class="text-body-secondary fw-light">/3000 руб</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Сборка ПК</li>
+                  <li>Установка ОС</li>
+                  <li>Настройка</li>
+                </ul>
+          </div> </div></div>
+
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+              <div class="card-header py-3 text-bg-primary border-primary"><h4 class="my-0 fw-normal">Сборка с периферией</h4></div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">1500<small class="text-body-secondary fw-light">/3500 руб</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Сборка ПК</li>
+                  <li>Установка ОС + Настройка</li>
+                  <li>Доп. периферия</li>
+                </ul>
+          </div></div></div>
+
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+              <div class="card-header py-3 text-bg-primary border-primary"><h4 class="my-0 fw-normal">На заказ</h4></div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">1500<small class="text-body-secondary fw-light">/3500 руб</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Сборка ПК</li>
+                  <li>Установка ОС + Настройка</li>
+                  <li>Доп. периферия</li>
+                </ul>
+          </div></div></div>
+
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3"><h4 class="my-0 fw-normal">Полное обслуживание</h4></div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">1000<small class="text-body-secondary fw-light">/1500 руб</small></h1>
+          </div></div></div>
+
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3"><h4 class="my-0 fw-normal">Замена деталей</h4></div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">500<small class="text-body-secondary fw-light">/1000 руб</small></h1>
+          </div> </div></div>
+
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3"><h4 class="my-0 fw-normal">Чистка ПК</h4></div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">500<small class="text-body-secondary fw-light">/1000 руб</small></h1>
+          </div> </div></div>
+
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3"><h4 class="my-0 fw-normal">Обновление ПО</h4></div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">500 руб</h1>
+          </div> </div></div>
+
+        </div>
+      </div>
+    </div>
+    <div id="item-4" class="position-relative">
+      <div class="py-5 position-relative top-50 start-50 translate-middle">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item" style="background-color: transparent;">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+              Какие услуги предоставляет OctopusMasters?
+            </button>
+          </h2>
+          <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Мы специализируемся на сборке ПК под заказ, обслуживании и чистке компьютеров, а также настройке программного обеспечения.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" style="background-color: transparent;">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+              Какие методы оплаты вы принимаете?
+            </button>
+          </h2>
+          <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Мы принимаем различные методы оплаты, включая наличные, банковские переводы и электронные платежные системы.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" style="background-color: transparent;">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+              Сколько времени занимает сборка ПК?
+            </button>
+          </h2>
+          <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Время сборки ПК зависит от его конфигурации и наличия комплектующих. Обычно это занимает от нескольких дней до недели.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" style="background-color: transparent;">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+              Предоставляете ли вы гарантию на свои услуги?
+            </button>
+          </h2>
+          <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Да, мы предоставляем гарантию на все предоставленные услуги. Подробности гарантии уточняйте у наших менеджеров.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" style="background-color: transparent;">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+              Могу ли я принести свои комплектующие для сборки ПК?
+            </button>
+          </h2>
+          <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Конечно, мы готовы собрать компьютер на основе ваших собственных комплектующих. Обсудите это с нашими специалистами для получения подробной информации.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" style="background-color: transparent;">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+              Как мне связаться с вашей службой поддержки?
+            </button>
+          </h2>
+          <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Вы можете связаться с нашей службой поддержки по телефону, по электронной почте или через социальные сети.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" style="background-color: transparent;">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+              Есть ли у вас возможность доставки и установки оборудования на дом?
+            </button>
+          </h2>
+          <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Да, мы предлагаем услугу доставки и установки оборудования на дом. Уточните подробности у наших менеджеров.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" style="background-color: transparent;">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+              Как узнать статус моего заказа?
+            </button>
+          </h2>
+          <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Для отслеживания статуса заказа, Вы можете связаться с нашей службой поддержки.
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      </div>
+    </div>
+    <div id="item-5" class="position-relative">
+      <div class="py-5 position-relative top-50 start-50 translate-middle">
+        <div class="px-4 pt-5 my-5 text-center border-bottom">
+          <h1 class="display-4 fw-bold text-body-emphasis mb-4">Свяжитесь с нами:</h1>
+          <ul class=" mb-4">
+            <li class="list-group-item">Email: <b>octopus_masters@outlook.com</b></li>
+            <li class="list-group-item">Телефон: <b>8 (930) 408-83-65</b></li>
+          </ul>
+          <div class="col-lg-6 mx-auto">
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+              <a href="tel:89304088365" class="btn btn-primary btn-lg px-4">Позвонить</a>
+              <a href="https://t.me/H0LID4Y" target="_blank"><button class="btn btn-outline-secondary btn-lg px-4">Telegram</button></a>
+              <a href="https://vk.com/command_0110" target="_blank"><button class="btn btn-outline-secondary btn-lg px-4">Вконтакте</button></a>
+            </div>
+          </div>
+          <div class="overflow-hidden" style="max-height: 40vh;">
+            <div class="container px-5">
+              <div style="position:relative;overflow:hidden;">
+                <a href="https://yandex.ru/maps/193/voronezh/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Воронеж</a>
+                <a href="https://yandex.ru/maps/193/voronezh/house/ulitsa_25_yanvarya_6a/Z0AYdAJkTEUHQFtrfXp4cHVhbA==/?ll=39.254500%2C51.691928&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица 25 Января, 6А — Яндекс Карты</a>
+                <iframe src="https://yandex.ru/map-widget/v1/?ll=39.254500%2C51.691928&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1Nzg3Nzk4MRI90KDQvtGB0YHQuNGPLCDQktC-0YDQvtC90LXQtiwg0YPQu9C40YbQsCAyNSDQr9C90LLQsNGA0Y8sIDbQkCIKDZwEHUIViMROQg%2C%2C&z=17" width="700" height="400" frameborder="1" allowfullscreen="true" style="position:relative;border-radius: 8px"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  <footer class="navbar fixed-bottom py-3 mx-4">
+    <ul class="nav col-4">
+      <li class="nav-item"><a href="https://t.me/H0LID4Y" target="_blank" class="nav-link px-2 text-body-secondary"><svg class="bi me-2" width="25" height="25"><use xlink:href="#telegram"></use></svg></a></li>
+      <li class="nav-item"><a href="#" target="_blank" class="nav-link px-2 text-body-secondary"><svg class="bi me-2" width="25" height="25"><use xlink:href="#tiktok"></use></svg></a></li>
+      <li class="nav-item"><a href="https://vk.com/command_0110" target="_blank" class="nav-link px-2 text-body-secondary"><svg class="bi me-2" width="25" height="25"><use xlink:href="#vk"></use></svg></a></li>
+    </ul>
+    <div class="col-4 text-center"><svg class="bi me-2" width="40" height="32"><use xlink:href="#mouse"></use></svg></div>
+    <p class="col-4 text-end">© 2024 OctopusMasters</p>
+  </footer>
+
+  <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const sections = document.querySelectorAll('div[data-bs-spy="scroll"] > div');
+        let currentSectionIndex = 0;
+
+        window.addEventListener('wheel', function(e) {
+          if (e.deltaY > 0) {
+            if (currentSectionIndex < sections.length - 1) {
+              currentSectionIndex++;
+              sections[currentSectionIndex].scrollIntoView({ behavior: 'smooth' });
+            }
+          } else {
+            if (currentSectionIndex > 0) {
+              currentSectionIndex--;
+              sections[currentSectionIndex].scrollIntoView({ behavior: 'smooth' });
+            }
+          }
+        });
+        sections.forEach(section => {
+          const marginTop = parseInt(window.getComputedStyle(section).marginTop);
+          section.style.height = `calc(100vh - ${marginTop + 150}px)`;
+        });
+        const buttons = document.querySelectorAll('.scroll-to-section');
+        buttons.forEach((button, index) => {
+          button.addEventListener('click', function() {
+            currentSectionIndex = index;
+            sections[currentSectionIndex].scrollIntoView({ behavior: 'smooth' });
+          });
+        });
+      });
+  </script>
+</body>
+</html>
