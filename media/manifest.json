@@ -1,0 +1,22 @@
+{
+    "name": "OctopusMasters",
+    "short_name": "OctopusMasters",
+    "description": "Сборка ПК, Сборка на заказ, Сборка ПК с периферией, обслуживание ПК, обновление драйверов, OctopusMasters, OM",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#000",
+    "theme_color": "#000",
+    "icons": [
+      {
+        "src": "../media/img/192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "../media/img/512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
