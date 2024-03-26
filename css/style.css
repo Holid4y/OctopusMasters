@@ -1,4 +1,3 @@
-
 @font-face {font-family: 'PR';src: url(../media/fonts/Pacifico-Regular.ttf);}
 @font-face {font-family: 'PDB';src: url(../media/fonts/PlayfairDisplay-Bold.ttf);}
 
@@ -18,12 +17,9 @@
     fill: currentColor;}
 body {
     background: url("../media/img/bg.png") no-repeat;
-    background-position: top;
-    min-height: 75px;
-    padding-top: 75px;
-    padding-bottom: 75px;}
+    background-position: top;}
 
-#item-1, #item-2, #item-3, #item-4, #item-5 {
-    height: calc(100vh - 150px);
-    min-height: 750px;
-}
+.blur{
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);}
