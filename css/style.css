@@ -23,3 +23,19 @@ body {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     -moz-backdrop-filter: blur(10px);}
+
+.mouse{
+    animation: mouse 0.8s linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;}
+
+@keyframes mouse {
+    from {
+        -webkit-transform: translateY(-3px);
+        -o-transform: translateY(-3px);
+        transform: translateY(-3px);}
+    to {
+        -webkit-transform: translateY(3px);
+        -o-transform: translateY(3px);
+        transform: translateY(3px);}
+}
